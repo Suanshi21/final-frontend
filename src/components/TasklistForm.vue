@@ -41,7 +41,7 @@ export default {
           throw new Error("No token found, please log in.");
         }
 
-        const response = await axios.get("http://localhost:3000/tasks", {
+        const response = await axios.get("https://final-backend-fbu1.onrender.com/tasks", {
           headers: {
             Authorization: `Bearer ${token}`, // Send token for authentication
           },

@@ -63,7 +63,7 @@ export default {
       this.errorMessage = null;  // Reset any previous error messages
 
       try {
-        await axios.post("http://localhost:3000/users/signup", {
+        await axios.post("https://final-backend-fbu1.onrender.com/users/signup", {
           username: this.username,
           password: this.password,
         });
